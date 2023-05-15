@@ -1,0 +1,11 @@
+'''
+to define function we use def 
+eg def print(data):
+   print("The name is :" + data)
+   print(Cameroon) 
+   => "The name is : Cameroon"
+eg def function convert_sec(seconds)
+    
+   
+
+'''
