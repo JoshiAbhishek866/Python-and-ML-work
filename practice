@@ -2,10 +2,35 @@
 to define function we use def 
 eg def print(data):
    print("The name is :" + data)
-   print(Cameroon) 
+=> print(Cameroon):
    => "The name is : Cameroon"
-eg def function convert_sec(seconds)
+eg. def area_trianglr(base,height):
+     return base8height/2
+     
+ # in python // or double slash is called floor division of the number , and it is essentially used for taking the integer part of division( Eg 5//2 = 2 ) 
+ 
+eg def function convert_sec(sec):
+    hr=sec//3600
+    min=(sec-hr*36000//60
+    remaining_min=sec-hr*3600-min*60
+    return hr,min,remaining_min
+ => hr,sec,remaining_sec=convert_sec(5000)     # as we know that fun will return 3 values , 3 variables are there for assignment of value. 
+    print( hr,sec,remaining_sec)
+     => 1  23 20 
     
+ # none datatype in python is used to indicate that things are empty or they doesnt return anything  
+  eg of none result= print(Camerron)
+     print(result)
+     => none
    
-
-'''
+ # boolean values has 2 results true or false
+ 
+=> conditions statements in python
+   def hint(username)
+      if len(username)<3:   # mindwell, : or colon is used after conditional statements in if
+         print("Invalid username")
+      elif len(username)>15:      # mindwell, : or colon is used after conditional statements in elif
+         print("invalid")
+      else :                        # mindwell, : or colon is used just after else 
+         print("valid username")
+ 
