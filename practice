@@ -37,3 +37,11 @@ eg def function convert_sec(sec):
    Eg  for x in range(5)    #here range is function for to generate no. here in sequence manner
          print(x)
        => x=0,1,2,3,4 
+- FOR - used to do work sequentially in an fixed manner
+  WHILE- to repeat actions untill condition changes
+- we can specify the size of iteration from starting to ending like 
+   eg.  p=1
+       for n in range(1,10)
+         p=p*n
+      print(p)
+   => 3628800
