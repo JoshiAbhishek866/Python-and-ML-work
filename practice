@@ -33,4 +33,7 @@ eg def function convert_sec(sec):
          print("invalid")
       else :                        # mindwell, : or colon is used just after else 
          print("valid username")
- 
+ - for loop no of iteration would be n-1 for given parameter n.
+   Eg  for x in range(5)    #here range is function for to generate no. here in sequence manner
+         print(x)
+       => x=0,1,2,3,4 
