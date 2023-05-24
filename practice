@@ -68,4 +68,8 @@ eg.  def greet(frnd)
       Hii H
       Hii I   #as string are iterable , and for loop will go over each letter of string 
       #soln is if u wanna scan each word than a letter than list should be used, where string(word) is part of list
-    
+  -> Recursion 
+     def recursive_function(parameters):
+    if base_case_condition(parameters):
+        return base_case_value
+    recursive_function(modified_parameters)
