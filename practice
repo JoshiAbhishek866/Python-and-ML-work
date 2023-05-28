@@ -74,4 +74,21 @@ eg.  def greet(frnd)
         return base_case_value
     recursive_function(modified_parameters)
 => Strings
-to find length of strings : Len(Stringname) 
+-to find length of strings : Len(Stringname) => output: 10
+- "abcd"*3 => output: "abcdabcdabcd"
+- Example 
+    text="Abhishek"
+     print(text[-1]) => output:k 
+     print(text[-2]) => output:e
+=> Sub-Strings
+  Example    color="Orange"
+             print(color[1:4]) => Output: "ran"
+  Example    fruit= "Pineapple"
+                  print(color[:3]) => output: Pine
+                  print(color[3:]) => output: apple
+In python too, Strings are Immutable. 
+- .index method is used to find the index number of certain character. 
+ Example   word = "supercalifragilisticexpialidocious"
+           position = word.index("x")
+           print(position)
+   
