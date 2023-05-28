@@ -73,3 +73,5 @@ eg.  def greet(frnd)
     if base_case_condition(parameters):
         return base_case_value
     recursive_function(modified_parameters)
+=> Strings
+to find length of strings : Len(Stringname) 
