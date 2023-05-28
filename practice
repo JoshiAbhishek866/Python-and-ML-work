@@ -91,4 +91,14 @@ In python too, Strings are Immutable.
  Example   word = "supercalifragilisticexpialidocious"
            position = word.index("x")
            print(position)
-   
+we can use word "in" to check whether the given sub-string is present in string 
+   Example      text="Abhishek"
+               "many" in text => Output: False
+               "Abhi" in text => Output: True
+- Real life example of substring,
+   def replace_domain(email,old_domain,new_domain)               #to replace old_domain of mail to new_domain
+      if "@" + old_domain in email:                              # to check whether  old domain is present or not 
+        index = email.index("@" + old_domain)                    # find mail
+        new_email = email[:index] + "@" + new_domain             # to put front of mail part as it is and to to update last part as it is 
+        return new_email                                         # to return that mail 
+      return email
