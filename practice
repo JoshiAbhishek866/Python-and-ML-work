@@ -102,3 +102,55 @@ we can use word "in" to check whether the given sub-string is present in string
         new_email = email[:index] + "@" + new_domain             # to put front of mail part as it is and to to update last part as it is 
         return new_email                                         # to return that mail 
       return email
+ - Methods on string 
+    -  "Mountains".upper() => "MOUNTAINS"
+    - "Mountains".lower() => "mountains"
+    -  "   yes   ".strip() => "yes"     #strip method removes extra spaces, extra tabs and new line characters 
+            "   yes   ".lstrip() => "yes  "     #lstrip method removes left-side space
+            "   yes   ".rstrip() => "  yes"     #rstrip method removes right-side space
+    - #method count returns how many times a given substring appears within a string 
+        Eg "THe number of times word "e" has occur: ".count("e")
+              => output=4
+    -  #Method  .endswith insures that substring is present in last portion of string or not. 
+         eg "Forest".endswith("rest")
+               => output=True 
+    - #method .isnumeric returns whether string is numeric or not
+                 eg "Forest".isnumeric()
+                   => output=False
+                 eg "123456".isnumeric()
+                   => output=True 
+    - # join method is used to concate the strings , The method receives a list of strings and returns one string 
+      #  with each of the strings joined by the initial string.
+                  eg. "...".join(["This","is","joinedbydots"])
+                   => output="This...is   joinedbyspace"
+                  eg. "   ".join(["This","is","joinedbyspace"])
+                   => output="This   is   joinedbyspace"
+   - # The split method returns a list of all the words in the initial string and it automatically splits by any whitespace.
+     #  It can optionally take a parameter and split the strings by another character, like a comma or a dot. 
+                  eg. "This is abhi".split()
+                  => output=["This","is","joinedbyspace"]
+     #string.isalpha() - Returns True if there are only alphabetic characters in the string. If not, returns False.
+   - Formatting Strings 
+          Eg.  name= "Manny"
+               number=len(name)*3
+               print("Your lucky no. is {number},{name}.".format(name=name, number=len(name)*3))
+          => output="Your lucky no. is 15,Manny".
+          Eg.  price= 7.5
+               with_tax=price*1.8
+               print(price,with_tax)                                                    #regular answer 
+               =>output: 7.5,8.175 
+               print("price:{.2f},with_tax:{.2f}".format(price,with_tax)                 #formatted answer 
+               => output: 7.50,8.18
+    Eg of formatting 
+ {:d} -> integer value -> '{:d}'.format(10.5)                                    → '10'
+
+{:.2f}  -> floating point with that many decimals ->'{:.2f}'.format(0.5)         → '0.50'
+
+{:.2s} ->  string with that many characters  -> '{:.2s}'.format('Python')        → 'Py'
+
+{:<6s} ->  string aligned to the left that many spaces -> '{:<6s}'.format('Py')  → 'Py    '
+
+{:>6s} ->  string aligned to the right that many spaces =>'{:>6s}'.format('Py')   → '    Py'
+
+{:^6s} ->  string centered in that many spaces  => '{:^6s}'.format('Py')          → '  Py  '
+
