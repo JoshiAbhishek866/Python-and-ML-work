@@ -201,5 +201,7 @@ list.extend(other_list) - Appends all the elements of other_list at the end of l
 #Lists are sequences of elements of any type and are mutable. A third data type that's a sequence and also closely related to lists is the tuple.
 # Tuples are sequences of elements of any type that are immutable. We write tuples in parentheses instead of square brackets.
 #position of element inside tuples have meaning , thus sequence in tuples matters
-
+#When we covered for loops, we showed the example of iterating over a list. This lets you iterate over each element in the list, exposing the element to the for loop as a variable.
+#But what if you want to access the elements in a list, along with the index of the element in question? You can do this using the enumerate() function.
+#The enumerate() function takes a list as a parameter and returns a tuple for each element in the list. The first value of the tuple is the index and the second value is the element itself.
     
