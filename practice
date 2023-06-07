@@ -187,12 +187,15 @@ List-specific operations and methods
 One major difference between lists and tuples is that lists are mutable (changeable) and tuples are immutable (not changeable). There are a few operations and methods that are specific to changing data within lists:
 list[index] = x - Replaces the element at index [n] with x.      
   #in general index is used to add element in the begginning and append is used to add element at the ed of the list
-list.append(x) - Appends x to the end of the list.
+list.append(x) - Appends x to the end of the list.   
+                                     # to add element in list
+list.index(x)   #tells the index of the element x in given list 
+list.sort() - it will sort elements of list
 list.insert(index, x) - Inserts x at index position [index].
 list.pop(index) - Returns the element at [index] and removes it from the list. If [index] position is not in the list, the last element in the list is returned and removed.
 list.remove(x) - Removes the first occurrence of x in the list.
 list.sort() - Sorts the items in the list.
-list.reverse() - Reverses the order of items of the list.
+list.reverse() - Reverses the order of items of the list. 
 list.clear() - Deletes all items in the list.
 list.copy() - Creates a copy of the list.
 list.extend(other_list) - Appends all the elements of other_list at the end of list
@@ -231,4 +234,9 @@ print(lst1[len(lst1)-3])  => Output: 2   #positive indexing
 print(lst1[5-3])  => Output: 2   #positive indexing 
 print(lst1[2])  => Output: 2   #positive indexing 
 #thus in list it can be changed none liken strings which are immutable 
+#Slicing of lists 
+print(lst1[2])  => Output: 2   #positive indexing 
+         #Remember  print(lst1[1:])  === print(lst1[1:len(lst1)])
+         #Remember  print(lst1[:3] === print(lst1[0:3]) 
+         #Remember  print(lst[:]) === print(0:len(lst1))
 """
