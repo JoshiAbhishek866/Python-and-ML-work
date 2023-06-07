@@ -116,18 +116,25 @@ list.append(x) - Appends x to the end of the list.
                                      # to add element in list
 list.index(x)   #tells the index of the element x in given list 
 list.sort() - it will sort elements of list
-list.insert(index, x) - Inserts x at index position [index].
+list.insert(index, x) 
+  # to Inserts x at index position [index] or to insert in the specific position in the list .
+
 list.pop(index) - Returns the element at [index] and removes it from the list. If [index] position is not in the list, the last element in the list is returned and removed.
 list.remove(x) - Removes the first occurrence of x in the list.
 list.sort() - Sorts the items in the list.
 list.reverse() - Reverses the order of items of the list. 
 list.clear() - Deletes all items in the list.
 list.copy() - Creates a copy of the list.
-list.extend(other_list) - Appends all the elements of other_list at the end of list
+list.extend(other_list) - Appends all the elements of other_list at the end of 
+eg m=[100,200,300] and l=[1,2,3,4]
+l.extend(m)  => output : [1,2,3,4.100,200,300]
+
 '''
 # Strings are sequences of characters and are immutable.
 #Lists are sequences of elements of any type and are mutable. A third data type that's a sequence and also closely related to lists is the tuple.
-# Tuples are sequences of elements of any type that are immutable. We write tuples in parentheses instead of square brackets.
+
+                       #Remember  Tuples are sequences of elements of any type that are immutable. We write tuples in parentheses instead of square brackets.
+                       
 #position of element inside tuples have meaning , thus sequence in tuples matters
 #When we covered for loops, we showed the example of iterating over a list. This lets you iterate over each element in the list, exposing the element to the for loop as a variable.
 #But what if you want to access the elements in a list, along with the index of the element in question? You can do this using the enumerate() function.
@@ -164,4 +171,54 @@ print(lst1[2])  => Output: 2   #positive indexing
          #Remember  print(lst1[1:])  === print(lst1[1:len(lst1)])
          #Remember  print(lst1[:3] === print(lst1[0:3]) 
          #Remember  print(lst[:]) === print(0:len(lst1))
+#reference in list 
+ l=[1,2,3,4,5]
+ print(l)  => [1,2,3,4,5]
+ m=l 
+ m[0]=0 # here on doing this step not only m[0]=0 but l[0]=0 as there is only one list with 2 reference called l and m. 
+ #solution 
+ m=l.copy() #now all the changes will be applied to m, only not to l as mi not l , m is copy of l.
+ 
+ => Tuples 
+ #Lists are sequences of elements of any type and are mutable. A third data type that's a sequence and also closely related to lists is the tuple.
+                             #Remember  Tuples are sequences of elements of any type that are immutable. We write tuples in parentheses instead of square brackets.
+     eg tuple1 = (1,2,2,3,5,4,6)
+     # if you want to write only one element in tuple the syntax is 
+      eg one_element_tuple = (1,)  # right syntax for 1 element 
+      
+      one_element_tuple[0]=50 #it is wrong syntax as tuples are immutable or unchangeable 
+      # thus tuples are type of list which cant be changed 
+ #slicing in tuples 
+ tup = (1,2,45,85,"green",99)
+ tup2=tup[1:4]    #tuple[start:end: jumpindex]
+ print(tup2) 
+ #just like list , following applies to tuple 
+         #Remember  print(tup[1:])  === print(tup[1:len(lst1)])
+         #Remember  print(tup[:3] === print(tup[0:3]) 
+         #Remember  print(tup[:]) === print(0:len(tup))
+#it is impossible to directly change tuple , solution this is first convert tuple into list and then manipulate list and convert list into tuple. 
+Eg countries = ("Spain", "Italy", "India", "England", "Germany")
+temp = list(countries)
+temp.append("Russia")       #add item 
+temp.pop(3)                 #remove item
+temp[2] = "Finland"         #change item
+countries = tuple(temp)
+print(countries)           #output => ('Spain', 'Italy', 'Finland', 'Germany', 'Russia')
+#However, we can directly concatenate two tuples without converting them to list.
+ eg countries = ("Pakistan", "Afghanistan", "Bangladesh", "ShriLanka")
+    countries2 = ("Vietnam", "India", "China")
+    southEastAsia = countries + countries2
+    print(southEastAsia)    #output => ('Pakistan', 'Afghanistan', 'Bangladesh', 'ShriLanka', 'Vietnam', 'India', 'China')
+ #The count() method of Tuple returns the number of times the given element appears in the tuple.
+       Syntax:  tuple.count(element)
+   Eg Tuple1 = (0, 1, 2, 3, 2, 3, 1, 3, 2)
+       res = Tuple1.count(3)
+      print('Count of 3 in Tuple1 is:', res)    #output => 3 
+#The Index() method returns the position  of the given element from the tuple.
+    Syntax: tuple.index(element, start, end)
+  Eg Tuple = (0, 1, 2, 3, 2, 3, 1, 3, 2)
+     res = Tuple.index(3)
+     print('First occurrence of 3 is', res)    #output => 3
+
+  
 """
