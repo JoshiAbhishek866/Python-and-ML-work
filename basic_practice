@@ -1,4 +1,8 @@
 '''
+# int /float => float   --> eg 7/3.5 = 2.0
+
+# to find quotient "//" is used  --> eg 9//5 = 1
+
 to define function we use def 
 eg def print(data):
    print("The name is :" + data)
