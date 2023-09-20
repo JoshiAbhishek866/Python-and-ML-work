@@ -1,3 +1,7 @@
+Key : string are immutable and tuples are mutable ; thus  tuple are  mutable strings 
+    : for mutable changes in copy will be reflected on original, as both tuples point to single entity.So solution is .( ie list1[] = list2[] ).
+
+
 => Strings
 -to find length of strings : Len(Stringname) => output: 10
 - "abcd"*3 => output: "abcdabcdabcd"
