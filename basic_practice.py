@@ -3,9 +3,9 @@
 
 # to find quotient "//" is used  --> eg 9//5 = 1
 
-in assignment, for immutable  x=y makes a copy 
+'''in assignment, for immutable  x=y makes a copy 
                for mutable  x=y  shares the value 
-if we start reassigning a list using "+" we get a new list 
+if we start reassigning a list using "+" we get a new list ; thus list.append() is used to extend the old original list without using concatenation'''
 to define function we use def 
 eg def print(data):
    print("The name is :" + data)
