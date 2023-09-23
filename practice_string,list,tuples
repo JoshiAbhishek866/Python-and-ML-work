@@ -1,6 +1,9 @@
 Key : string are immutable and tuples are mutable ; thus  tuple are  mutable strings 
     : for mutable changes in copy will be reflected on original, as both tuples point to single entity.So solution is .( ie list1[] = list2[] ).
+or tuples are immutable list
+Key : string are immutable and tuples are immutable list  ; and lists are mutable  
 
+list comprehension => to generate list on the fly
 
 => Strings
 -to find length of strings : Len(Stringname) => output: 10
