@@ -1,6 +1,6 @@
 '''
 # int /float => float   --> eg 7/3.5 = 2.0
-
+# Default parameters in py must be positioned at end
 # to find quotient "//" is used  --> eg 9//5 = 1
 
 '''in assignment, for immutable  x=y makes a copy 
